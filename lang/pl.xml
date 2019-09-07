@@ -4,9 +4,32 @@
     [OPIS SCENY | PIERWSZE ZABOJSTWO]
     Lincoln Park, Denver, Kolorado 80204, Stany Zjednoczone</desc>
   <scene clear="0" spaces="0" color="0">
-    Lincoln Park, Denver, Kolorado 80204, Stany Zjednoczone
+    Lokalna policja otrzymala telefon w godzinach wieczornych, na podanej lokalizacji
+    znaleziono zmasakrowane ciało.
+
+    Trup był poćwiartowany a wszystkie kończyny poustawiane w jednym rzędzie
+    Na lewą nogę założona była zielona opaska a kolano podpisane było numerem 27
+    Na lewą rękę założona była żółta opaska a ramie podpisane było numerem 713
+    Na prawą rękę założona była czerwona opaska a ramie podpisane było numerem 125
+    Na prawą nogę założona była niebieska opaska a kolano podpisane było numerem 27
+    
+    Dodatkowo w kieszeni znajdowała się notatka:
+    'W domu jest intruz, a odpowiedź choć sam ci dałem chce tej samej. Ale innej'
+    
+    Do notatki dodany byl numer telefonu na ktory trzeba wyslac wiadomosc sms z rozwiazaniem
+    (uzyj komendy sms [kod])
     
   </scene>
+  <badcode clear="0" spaces="0" color="0">
+    Brak odzewu od przestepcy...
+  </badcode>
+  <goodcode clear="0" spaces="0" color="0">
+    Mija chwila, a ty dostajesz smsa zwrotnego!
+  </goodcode>
+  <acmds clear="0" spaces="0" color="0">Dostepne komendy:
+  akta - jawne dane z przestepstwa
+  sms [kod] - wysyla sms z podanym kodem, jezeli kod sie zgadza przechodzi na nastepny poziom
+  </acmds>
   <done clear="1" spaces="1" color="4">
     Gratulacje!
     Przechodzisz do nastepnego poziomu

@@ -68,6 +68,7 @@ namespace byteRunner{
             } else A = new TextController();
 
             A.Get("desc","scene");
+            new CommandsManager();
 
         }
     }

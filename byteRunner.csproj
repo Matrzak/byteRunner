@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="basic\DFile.cs" />
     <Compile Include="basic\TextComponent.cs" />
+    <Compile Include="managers\CommandsManager.cs" />
     <Compile Include="managers\WebManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

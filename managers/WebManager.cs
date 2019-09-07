@@ -29,7 +29,7 @@ namespace byteRunner.managers {
                 string durl = this.surl + f.GetDDir();
                 try{
                     client.DownloadFile(durl, f.GetAbsoluteDir());
-                } catch(Exception e) {
+                } catch(Exception) {
                     Console.WriteLine("An error has occured while downloading a file, quiting in 5sec");
                     Thread.Sleep(5000);
                     System.Environment.Exit(1);
