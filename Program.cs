@@ -12,20 +12,28 @@ using byteRunner.managers;
 namespace byteRunner{
     class Program{
 
-        public static string logo_ascii = @"                           ######                                     
- #####  #   # ##### ###### #     # #    # #    # #    # ###### #####  
- #    #  # #    #   #      #     # #    # ##   # ##   # #      #    # 
- #####    #     #   #####  ######  #    # # #  # # #  # #####  #    # 
- #    #   #     #   #      #   #   #    # #  # # #  # # #      #####  
- #    #   #     #   #      #    #  #    # #   ## #   ## #      #   #  
- #####    #     #   ###### #     #  ####  #    # #    # ###### #    # 
-                                                                     ";
+        public static string logo_ascii = @",,             ,        -__ /\                                
+||            ||          || \,                               
+||/|, '\\/\\ =||=  _-_   /|| /   \\ \\ \\/\\ \\/\\  _-_  ,._-_
+|| ||  || ;'  ||  || \\  \||/-   || || || || || || || \\  ||  
+|| |'  ||/    ||  ||/     ||  \  || || || || || || ||/    ||  
+\\/    |/     \\, \\,/  _---_-|, \\/\\ \\ \\ \\ \\ \\,/   \\, 
+      (                                                       
+       -_-                                                    
+
+";
 
         private static String dir = Directory.GetCurrentDirectory();
         public static TextController A = new TextController(Lang.DEFAULT);
 
         static bool SettingsExists() {
             return File.Exists(dir + @"/settings.xml") ? true : false;
+        }
+
+        static void removeOldExe(){
+            if (File.Exists(dir + @"/byteRunner.exe")){
+                File.Delete(dir + @"/byteRunner.exe");
+            }
         }
 
         static void CreateSettings(){
@@ -59,12 +67,8 @@ namespace byteRunner{
                 CreateSettings();
             } else A = new TextController();
 
-            if(args.Length == 1 && args[0] == "-herewego"){
-                A.Get("done");
-                new WebManager().Download();
-                return;
-            }
-            A.Get("lore", "introducing","skills","skills_", "start");
+            A.Get("desc","scene");
+
         }
     }
 }

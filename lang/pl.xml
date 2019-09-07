@@ -1,39 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <dictionary>
-  <lore clear="0" spaces="0" color="7">
-    [FABULA GRY]</lore>
-  <introducing clear="0" spaces="1" color="0">
-    byteRunner | Developed by Matrzak
-    Witaj, byteRunner jest grą której głównym celem jest odnalezienie seryjnego
-    zabójcy. Morderca ten pozostawia raz na jakiś czas wskazówki które przy
-    odpowiednim wykorzystaniu powinny zaprowadzić policje do celu.
+  <desc clear="0" spaces="0" color="7">
+    [OPIS SCENY | PIERWSZE ZABOJSTWO]
+    Lincoln Park, Denver, Kolorado 80204, Stany Zjednoczone</desc>
+  <scene clear="0" spaces="0" color="0">
+    Lincoln Park, Denver, Kolorado 80204, Stany Zjednoczone
     
-    Niestety, detektywki departamentu sprawiedliwosci nie mogą poradzić sobie
-    z zagadkami które zostawia przestępca, wystawili oni nagrodę pieniezna
-    za doprowadzenie ich do sprawcy.
-    
-    Twoja postac to znany juz na skale światową haker o pseudonimie "byteRunner"
-    który postanowił pomóc policji w złapaniu przestępcy.
-    
-    Gra jest napisana stopniowo, co to oznacza?
-    Po przejsciu pierwszego levelu gra sama pobierze ze zdalnego servera
-    kolejny poziom.</introducing>
-  <skills clear="0" spaces="1" color="7">
-    [Umiejetnosci]</skills>
-  <skills_ clear="0" spaces="0" color="0">
-    Oto lista przydatnych umiejętności/terminów które przydadzą się tobie w przejściu gry.
-    => Logiczne Myślenie
-    => Programowanie (JS,PYTHON,C++)
-    => Kryptografia
-    => Bash/Unix
-    
-    (Do przejscia gry wymagane jest połączenie z internetem w celu pobierania kolejnych leveli)
-  </skills_>
-  <start clear="0" spaces="1" color="4">
-    Czas Rozpocząć naszą przygode!
-    Uruchom gre z argumentem -herewego aby dostac sie do poziomu pierwszego!
-  </start>
-  <done clear="0" spaces="1" color="4">
+  </scene>
+  <done clear="1" spaces="1" color="4">
     Gratulacje!
     Przechodzisz do nastepnego poziomu
   </done>
