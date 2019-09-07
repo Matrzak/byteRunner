@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dictionary>
+  <settings clear="0" spaces="0" color="0">
+    [PL] Nie znaleziono pliku ustawien... rozpoczynam tworzenie
+    [EN] I cant find settings file... creating one
+  </settings>
+  <lang clear="0" spaces="0" color="0">
+    [PL] Wybierz domyslny jezyk gry wpisz PL aby grac w jezyku POLSKIM
+    lub EN aby grac w jezyku angielskim
+
+    [EN] Choose your default game language, type EN if you want to play
+    with english configuration, otherwise if you want to try game with
+    polish configuration type PL
+  </lang>
+</dictionary>
