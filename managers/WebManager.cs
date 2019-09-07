@@ -1,6 +1,7 @@
 ﻿using byteRunner.basic;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -19,7 +20,7 @@ namespace byteRunner.managers {
 
         public WebManager(){
             this.files = new DFile[] {
-                new DFile(@"/levels/s1/byteRunner.exe","stage1.exe","/"),
+                new DFile(@"/levels/s1/stage1.exe","stage1.exe","/"),
                 new DFile(@"/levels/s1/pl.xml","pl.xml","/lang/"),
                 new DFile(@"/levels/s1/en.xml","en.xml","/lang/"),
             };
@@ -40,6 +41,7 @@ namespace byteRunner.managers {
                 }
             }
             Program.A.Get("dle");
+            Process.Start(Directory.GetCurrentDirectory()+"/stage1.exe");
             return this;
         }
 
