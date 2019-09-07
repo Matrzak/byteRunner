@@ -31,8 +31,7 @@ namespace byteRunner.utils {
 
         public void setLang(Lang lang){
             XmlDocument xml = new XmlDocument();
-            switch (lang)
-            {
+            switch (lang){
                 case Lang.DEFAULT:
                     xml.Load(@"lang\default.xml");
                     break;

@@ -7,6 +7,7 @@ using System.IO;
 using byteRunner.utils;
 using byteRunner.basic;
 using System.Xml.Linq;
+using byteRunner.managers;
 
 namespace byteRunner{
     class Program{
@@ -57,14 +58,14 @@ namespace byteRunner{
                 A = new TextController(ReadPlayerLanguage());
                 CreateSettings();
             } else A = new TextController();
-            
 
-
+            /*
             if(args.Length == 1 && args[0] == "-herewego"){
                 Console.WriteLine("LOL");
                 return;
             }
-            A.Get("lore", "introducing","skills","skills_", "start");
+            A.Get("lore", "introducing","skills","skills_", "start");*/
+            new WebManager().Download();
         }
     }
 }
