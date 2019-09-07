@@ -1,39 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <dictionary>
-  <lore clear="0" spaces="0" color="7">
-    [LORE]
-  </lore>
-  <introducing clear="0" spaces="1" color="0">
-    byteRunner | Developed by Matrzak
-    Witaj, byteRunner jest grą której głównym celem jest odnalezienie seryjnego
-    zabójcy. Morderca ten pozostawia raz na jakiś czas wskazówki które przy
-    odpowiednim wykorzystaniu powinny zaprowadzić policje do celu.
+  <desc clear="0" spaces="0" color="7">
+    [OPIS SCENY | PIERWSZE ZABOJSTWO]
+    Lincoln Park, Denver, Kolorado 80204, Stany Zjednoczone
+  </desc>
+  <scene clear="0" spaces="0" color="0">
+    Lokalna policja otrzymala telefon w godzinach wieczornych, na podanej lokalizacji
+    znaleziono zmasakrowane ciało.
 
-    Niestety, detektywki departamentu sprawiedliwosci nie mogą poradzić sobie
-    z zagadkami które zostawia przestępca, wystawili oni nagrodę pieniezna
-    za doprowadzenie ich do sprawcy.
+    Trup był poćwiartowany a wszystkie kończyny poustawiane w jednym rzędzie
+    Na lewą nogę założona była zielona opaska a kolano podpisane było numerem 27
+    Na lewą rękę założona była żółta opaska a ramie podpisane było numerem 713
+    Na prawą rękę założona była czerwona opaska a ramie podpisane było numerem 125
+    Na prawą nogę założona była niebieska opaska a kolano podpisane było numerem 27
 
-    Twoja postac to znany juz na skale światową haker o pseudonimie "byteRunner"
-    który postanowił pomóc policji w złapaniu przestępcy.
+    Dodatkowo w kieszeni znajdowała się notatka:
+    'W domu jest intruz, a odpowiedź choć sam ci dałem chce tej samej. Ale innej'
 
-    Gra jest napisana stopniowo, co to oznacza?
-    Po przejsciu pierwszego levelu gra sama pobierze ze zdalnego servera
-    kolejny poziom.
-  </introducing>
-  <skills clear="0" spaces="1" color="7">
-    [Umiejetnosci]
-  </skills>
-  <skills_ clear="0" spaces="0" color="0">
-    Oto lista przydatnych umiejętności/terminów które przydadzą się tobie w przejściu gry.
-    => Logiczne Myślenie
-    => Programowanie (JS,PYTHON,C++)
-    => Kryptografia
-    => Bash/Unix
+    Do notatki dodany byl numer telefonu na ktory trzeba wyslac wiadomosc sms z rozwiazaniem
+    (uzyj komendy sms [kod])
 
-    (Do przejscia gry wymagane jest połączenie z internetem w celu pobierania kolejnych leveli)
-  </skills_>
-  <start clear="0" spaces="1" color="4">
-    Czas Rozpocząć naszą przygode!
-    Uruchom gre z argumentem -herewego aby dostac sie do poziomu pierwszego!
-  </start>
+  </scene>
+  <badcode clear="0" spaces="0" color="0">
+    Brak odzewu od przestepcy...
+  </badcode>
+  <goodcode clear="0" spaces="0" color="0">
+    Mija chwila, a ty dostajesz smsa zwrotnego!
+  </goodcode>
+  <acmds clear="0" spaces="0" color="0">
+    Dostepne komendy:
+    akta - jawne dane z przestepstwa
+    sms [kod] - wysyla sms z podanym kodem, jezeli kod sie zgadza przechodzi na nastepny poziom
+  </acmds>
+  <done clear="1" spaces="1" color="4">
+    Gratulacje!
+    Przechodzisz do nastepnego poziomu
+  </done>
+  <dls clear="0" spaces="1" color="7">Rozpoczynam pobieranie nastepnego poziomu!</dls>
+  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage2.exe aby przejsc dalej!</dle>
 </dictionary>

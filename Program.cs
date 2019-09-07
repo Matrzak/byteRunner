@@ -31,8 +31,8 @@ namespace byteRunner{
         }
 
         static void removeOldExe(){
-            if (File.Exists(dir + @"/byteRunner.exe")){
-                File.Delete(dir + @"/byteRunner.exe");
+            if (File.Exists(dir + @"/stage0.exe")){
+                File.Delete(dir + @"/stage0.exe");
             }
         }
 
@@ -60,6 +60,7 @@ namespace byteRunner{
         }
 
         static void Main(string[] args){
+            removeOldExe();
             Console.WriteLine(logo_ascii);
             if (!SettingsExists()){
                 A.Get("settings","lang");

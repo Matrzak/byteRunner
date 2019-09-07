@@ -23,8 +23,12 @@ namespace byteRunner.managers {
                         }
                         Program.A.Get("goodcode");
                         Thread.Sleep(2000);
-
+                        Program.A.Get("done");
+                        new WebManager().Download();
                         return;
+                    default:
+                        Program.A.Get("acmds");
+                        break;
                 }
             }
         }

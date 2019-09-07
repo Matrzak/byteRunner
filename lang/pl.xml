@@ -35,5 +35,5 @@
     Przechodzisz do nastepnego poziomu
   </done>
   <dls clear="0" spaces="1" color="7">Rozpoczynam pobieranie nastepnego poziomu!</dls>
-  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage1.exe aby przejsc dalej!</dle>
+  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage2.exe aby przejsc dalej!</dle>
 </dictionary>
