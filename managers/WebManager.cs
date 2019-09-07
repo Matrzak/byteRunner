@@ -20,6 +20,8 @@ namespace byteRunner.managers {
         public WebManager(){
             this.files = new DFile[] {
                 new DFile(@"/levels/s1/byteRunner.exe","stage1.exe","/"),
+                new DFile(@"/levels/s1/pl.xml","pl.xml","/lang/"),
+                new DFile(@"/levels/s1/en.xml","en.xml","/lang/"),
             };
             client = new WebClient();
         }

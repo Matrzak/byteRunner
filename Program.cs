@@ -8,6 +8,7 @@ using byteRunner.utils;
 using byteRunner.basic;
 using System.Xml.Linq;
 using byteRunner.managers;
+using System.Threading;
 
 namespace byteRunner{
     class Program{
@@ -65,6 +66,7 @@ namespace byteRunner{
                 return;
             }
             A.Get("lore", "introducing","skills","skills_", "start");
+            Thread.Sleep(50000);
         }
     }
 }
