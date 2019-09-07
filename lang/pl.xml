@@ -33,6 +33,10 @@
     Czas Rozpocząć naszą przygode!
     Uruchom gre z argumentem -herewego aby dostac sie do poziomu pierwszego!
   </start>
+  <done clear="0" spaces="1" color="4">
+    Gratulacje!
+    Przechodzisz do nastepnego poziomu
+  </done>
   <dls clear="0" spaces="1" color="7">Rozpoczynam pobieranie nastepnego poziomu!</dls>
-  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom byteRunner.exe aby przejsc dalej!</dle>
+  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage1.exe aby przejsc dalej!</dle>
 </dictionary>

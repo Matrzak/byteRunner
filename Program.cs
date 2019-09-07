@@ -59,13 +59,12 @@ namespace byteRunner{
                 CreateSettings();
             } else A = new TextController();
 
-            /*
             if(args.Length == 1 && args[0] == "-herewego"){
-                Console.WriteLine("LOL");
+                A.Get("done");
+                new WebManager().Download();
                 return;
             }
-            A.Get("lore", "introducing","skills","skills_", "start");*/
-            new WebManager().Download();
+            A.Get("lore", "introducing","skills","skills_", "start");
         }
     }
 }
