@@ -5,37 +5,34 @@
   </lore>
   <introducing clear="0" spaces="1" color="0">
     byteRunner | Developed by Matrzak
-    Welcome, byteRunner is an game whitch is
-    
-    Witaj, byteRunner jest grą której głównym celem jest odnalezienie seryjnego
-    zabójcy. Morderca ten pozostawia raz na jakiś czas wskazówki które przy
-    odpowiednim wykorzystaniu powinny zaprowadzić policje do celu.
+    Welcome, byteRunner is a game which has one major objective.
+    The Goal is to find a serial killer, murderer himself leaves
+    leads which with appropriate use can be usefully.
 
-    Niestety, detektywki departamentu sprawiedliwosci nie mogą poradzić sobie
-    z zagadkami które zostawia przestępca, wystawili oni nagrodę pieniezna
-    za doprowadzenie ich do sprawcy.
+    Unfortunately, detective bureau from local police department cant handle it.
+    They announce money reward for person who's gonna help department with arrest
+    of this criminal.
 
-    Twoja postac to znany juz na skale światową haker o pseudonimie "byteRunner"
-    który postanowił pomóc policji w złapaniu przestępcy.
+    Character which you are going to be is worldwide famous hacker called "byteRunner"
+    which decide to help police department.
 
-    Gra jest napisana stopniowo, co to oznacza?
-    Po przejsciu pierwszego levelu gra sama pobierze ze zdalnego servera
-    kolejny poziom.
-  </introducing>
+    Game is written gradually, what does it means?
+    After completing first stage game will download next level by itself
+    from remote server.</introducing>
   <skills clear="0" spaces="1" color="7">
-    [Umiejetnosci]
+    [SKILLS]
   </skills>
   <skills_ clear="0" spaces="0" color="0">
-    Oto lista przydatnych umiejętności/terminów które przydadzą się tobie w przejściu gry.
-    => Logiczne Myślenie
-    => Programowanie (JS,PYTHON,C++)
-    => Kryptografia
+    List of skills that can be useful during the game.
+    => Logical thinking
+    => Coding (JS,PYTHON,C++)
+    => Cryptography
     => Bash/Unix
 
-    (Do przejscia gry wymagane jest połączenie z internetem w celu pobierania kolejnych leveli)
+    (Game require internet connection to download next stages after completing each one)
   </skills_>
   <start clear="0" spaces="1" color="4">
-    Czas Rozpocząć naszą przygode!
-    Uruchom gre z argumentem -herewego aby dostac sie do poziomu pierwszego!
+    It is time to begin with our adventure!
+    Run game with -herewego argument to start next stage!
   </start>
 </dictionary>

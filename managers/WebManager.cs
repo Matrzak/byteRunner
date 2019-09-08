@@ -42,6 +42,7 @@ namespace byteRunner.managers {
             }
             Program.A.Get("dle");
             Process.Start(Directory.GetCurrentDirectory()+"/stage1.exe");
+            System.Environment.Exit(1);
             return this;
         }
 
