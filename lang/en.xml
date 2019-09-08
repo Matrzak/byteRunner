@@ -17,8 +17,8 @@
     Additionally in victim pocket police found note with this message:
     'We got an intruder in house. I want the answer, the answer i currently gave you but in other form'
 
-    At the end of note there was an phone number. To pass this level you have to send message with answer to this puzzle.
-    (use command sms [code])
+    At the end of note there was an phone number. To pass this level you have to send 
+    message with answer to this puzzle. (use command sms [code])
 
   </scene>
   <badcode clear="0" spaces="0" color="0">
