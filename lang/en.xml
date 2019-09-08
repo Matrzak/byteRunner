@@ -33,7 +33,7 @@
     sms [code] - send sms with code
   </acmds>
   <done clear="1" spaces="1" color="4">
-    Congratulations
+    Congratulations!
     You have passed to next level
   </done>
   <dls clear="0" spaces="1" color="7">Downloading next stage!</dls>
