@@ -18,7 +18,11 @@ namespace byteRunner.managers {
         private WebClient client;
 
         public WebManager(){
-            this.files = new DFile[] {};
+            this.files = new DFile[] {
+                new DFile(@"/levels/s2/stage2.exe","stage2.exe","/"),
+                new DFile(@"/levels/s2/pl.xml","pl.xml","/lang/"),
+                new DFile(@"/levels/s2/en.xml","en.xml","/lang/"),
+            };
             client = new WebClient();
         }
 
