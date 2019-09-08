@@ -1,41 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <dictionary>
   <desc clear="0" spaces="0" color="7">
-    [OPIS SCENY | PIERWSZE ZABOJSTWO]
-    Lincoln Park, Denver, Kolorado 80204, Stany Zjednoczone
+    [CRIME SCENE | FIRST KILL]
+    Lincoln Park, Denver, Colorado 80204, United States Of America
   </desc>
   <scene clear="0" spaces="0" color="0">
-    Lokalna policja otrzymala telefon w godzinach wieczornych, na podanej lokalizacji
-    znaleziono zmasakrowane ciało.
+    The local police department got information about dead body found in
+    Lincoln park.
 
-    Trup był poćwiartowany a wszystkie kończyny poustawiane w jednym rzędzie
-    Na lewą nogę założona była zielona opaska a kolano podpisane było numerem 27
-    Na lewą rękę założona była żółta opaska a ramie podpisane było numerem 713
-    Na prawą rękę założona była czerwona opaska a ramie podpisane było numerem 125
-    Na prawą nogę założona była niebieska opaska a kolano podpisane było numerem 27
+    Body was mutilated and each limb was situated next to each other horizontally
+    A green band was on victim left leg and at knee was written number 27
+    A yellow band was on victim left hand and at arm was written number 713
+    A red band was on victim right leg and at knee was written number 125
+    A blue band was on victim right hand and at arm was written number 27
 
-    Dodatkowo w kieszeni znajdowała się notatka:
-    'W domu jest intruz, a odpowiedź choć sam ci dałem chce tej samej. Ale innej'
+    Additionally in victim pocket police found note with this message:
+    'We got an intruder in house. I want the answer, the answer i currently gave you but in other form'
 
-    Do notatki dodany byl numer telefonu na ktory trzeba wyslac wiadomosc sms z rozwiazaniem
-    (uzyj komendy sms [kod])
+    At the end of note there was an phone number. To pass this level you have to send message with answer to this puzzle.
+    (use command sms [code])
 
   </scene>
   <badcode clear="0" spaces="0" color="0">
-    Brak odzewu od przestepcy...
+    There is no response...
   </badcode>
   <goodcode clear="0" spaces="0" color="0">
-    Mija chwila, a ty dostajesz smsa zwrotnego!
+    After few seconds you get an reply message!
   </goodcode>
   <acmds clear="0" spaces="0" color="0">
-    Dostepne komendy:
-    akta - jawne dane z przestepstwa
-    sms [kod] - wysyla sms z podanym kodem, jezeli kod sie zgadza przechodzi na nastepny poziom
+    Available Commands:
+    files - explicit crime data
+    sms [code] - send sms with code
   </acmds>
   <done clear="1" spaces="1" color="4">
-    Gratulacje!
-    Przechodzisz do nastepnego poziomu
+    Congratulations
+    You have passed to next level
   </done>
-  <dls clear="0" spaces="1" color="7">Rozpoczynam pobieranie nastepnego poziomu!</dls>
-  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage2.exe aby przejsc dalej!</dle>
+  <dls clear="0" spaces="1" color="7">Downloading next stage!</dls>
+  <dle clear="0" spaces="1" color="7">All good! Run stage2.exe to continue adventrue!</dle>
 </dictionary>
