@@ -35,6 +35,10 @@
     It is time to begin with our adventure!
     Run game with -herewego argument to start next stage!
   </start>
+  <done clear="1" spaces="1" color="4">
+    Congratulations!
+    You have passed to next level
+  </done>
   <dls clear="0" spaces="1" color="7">Downloading next stage!</dls>
   <dle clear="0" spaces="1" color="7">All good! Run stage1.exe to continue adventure!</dle>
 </dictionary>
