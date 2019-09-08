@@ -1,44 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <dictionary>
   <desc clear="0" spaces="0" color="7">
-    [CRIME SCENE | FIRST KILL]
-    Lincoln Park, Denver, Colorado 80204, United States Of America
+    [OPIS SCENY | WIADOMOSC ZWROTNA]
+    Chwila po wyslaniu smsa z prawidłowym kodem
   </desc>
   <scene clear="0" spaces="0" color="0">
-    The local police department got information about dead body found in
-    Lincoln park.
+    I ty, Brutusie, przeciw mnie?
 
-    Body was mutilated and each limb was situated next to each other horizontally
-    A green band was on victim left leg and at knee was written number 27
-    A yellow band was on victim left hand and at arm was written number 713
-    A red band was on victim right leg and at knee was written number 125
-    A blue band was on victim right hand and at arm was written number 27
+    MjM=[+]NTQzMg==[-]NTAwMA==[-]NDMw[-]MTg==
 
-    Additionally in victim pocket police found note with this message:
-    
-    '4 brothers, one of them was an outcast although he was the smartest of them all.
-    Unnecessary, worth nothing. And you are asking me about answer? I currently gave you
-    what you need. So give me what i gave you, but in other form... I had three brothers'
-
-    At the end of note there was an phone number. To pass this level you have to send
-    message with answer to this puzzle. (use command sms [code])
-
+    Max wbx bl vtlm
   </scene>
   <badcode clear="0" spaces="0" color="0">
-    There is no response...
+    Bledna wiadomosc...
   </badcode>
   <goodcode clear="0" spaces="0" color="0">
-    After few seconds you get an reply message!
+    Mija chwila, a ty dostajesz smsa zwrotnego!
   </goodcode>
   <acmds clear="0" spaces="0" color="0">
-    Available Commands:
-    files - explicit crime data
-    sms [code] - send sms with code
+    Dostepne komendy:
+    szyfruj [klucz] [wiadomosc] - szyfruje wiadomosc
+    sms [wiadomosc] - wysyla wiadomosc sms do przestepcy, jezeli wiadomosc sie zgadza przechodzi do nastepnego poziomu
   </acmds>
   <done clear="1" spaces="1" color="4">
-    Congratulations!
-    You have passed to next level
+    Gratulacje!
+    Przechodzisz do nastepnego poziomu
   </done>
-  <dls clear="0" spaces="1" color="7">Downloading next stage!</dls>
-  <dle clear="0" spaces="1" color="7">All good! Run stage2.exe to continue adventure!</dle>
+  <dls clear="0" spaces="1" color="7">Rozpoczynam pobieranie nastepnego poziomu!</dls>
+  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage3.exe aby przejsc dalej!</dle>
 </dictionary>

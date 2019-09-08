@@ -12,16 +12,12 @@ using byteRunner.managers;
 namespace byteRunner{
     class Program{
 
-        public static string logo_ascii = @",,             ,        -__ /\                                
-||            ||          || \,                               
-||/|, '\\/\\ =||=  _-_   /|| /   \\ \\ \\/\\ \\/\\  _-_  ,._-_
-|| ||  || ;'  ||  || \\  \||/-   || || || || || || || \\  ||  
-|| |'  ||/    ||  ||/     ||  \  || || || || || || ||/    ||  
-\\/    |/     \\, \\,/  _---_-|, \\/\\ \\ \\ \\ \\ \\,/   \\, 
-      (                                                       
-       -_-                                                    
-
-";
+        public static string logo_ascii = @"  _           _       ____                              
+ | |__  _   _| |_ ___|  _ \ _   _ _ __  _ __   ___ _ __ 
+ | '_ \| | | | __/ _ \ |_) | | | | '_ \| '_ \ / _ \ '__|
+ | |_) | |_| | ||  __/  _ <| |_| | | | | | | |  __/ |   
+ |_.__/ \__, |\__\___|_| \_\\__,_|_| |_|_| |_|\___|_|   
+        |___/                                           ";
 
         private static String dir = Directory.GetCurrentDirectory();
         public static TextController A = new TextController(Lang.DEFAULT);
@@ -31,8 +27,8 @@ namespace byteRunner{
         }
 
         static void removeOldExe(){
-            if (File.Exists(dir + @"/stage0.exe")){
-                File.Delete(dir + @"/stage0.exe");
+            if (File.Exists(dir + @"/stage1.exe")){
+                File.Delete(dir + @"/stage1.exe");
             }
         }
 

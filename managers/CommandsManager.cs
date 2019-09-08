@@ -6,18 +6,56 @@ using System.Threading;
 
 namespace byteRunner.managers {
     class CommandsManager {
+        public string Enc(string strPT, int intK)
+        {
+            strPT = strPT.ToLower();
+            char[] buffer = strPT.ToCharArray();
+            for (int i = 0; i < buffer.Length; i++)
+            {
+                char letter = buffer[i];
+                if (letter != ' ')
+                {
+                    letter = (char)(letter + intK);
+                    if (letter > 'z')
+                    {
+                        letter = (char)(letter - 26);
+                    }
+                }
+                buffer[i] = letter;
+            }
+            string strCT = new string(buffer);
+            return strCT;
+        }
+
+        public static bool IsNumeric(object Expression){
+            double retNum;
+
+            bool isNum = Double.TryParse(Convert.ToString(Expression), System.Globalization.NumberStyles.Any, System.Globalization.NumberFormatInfo.InvariantInfo, out retNum);
+            return isNum;
+        }
 
         public CommandsManager(){
             Program.A.Get("acmds");
             while (true){
                 string[] c = Console.ReadLine().Split(' ');
                 switch (c[0]){
-                    case "akta": case "files":
-                        System.Diagnostics.Process.Start("https://www.google.com/maps/@39.7368934,-105.0040631,3a,75y,183.36h,88.51t/data=!3m7!1e1!3m5!1sCPcsU6OesCaIq5ZxNybYKA!2e0!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DCPcsU6OesCaIq5ZxNybYKA%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D323.34113%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656");
+                    case "szyfruj":
+                        if(c.Length <= 2 || !IsNumeric(c[1])){
+                            Program.A.Get("acmds");
+                            break;
+                        }
+                        int l = Convert.ToInt16(c[1]);
+                        c = c.Skip(2).ToArray();
+                        Console.WriteLine(Enc(String.Join(" ",c),l).Replace('O','ś').Replace('?','ł'));
                         break;
                     case "sms":
-                        if(c.Length <= 1) break;
-                        if(!string.Equals("#7D1B1B", c[1], StringComparison.OrdinalIgnoreCase)){
+                        if (c.Length <= 1){
+                            Program.A.Get("acmds");
+                            break;
+                        }
+                        c = c.Skip(1).ToArray();
+                        string text = String.Join(" ", c);
+                        if (!string.Equals("the die is cast", text, StringComparison.OrdinalIgnoreCase)){
                             Program.A.Get("badcode");
                             break;
                         }
@@ -25,7 +63,7 @@ namespace byteRunner.managers {
                         Thread.Sleep(2000);
                         Program.A.Get("done");
                         new WebManager().Download();
-                        return;
+                        break;
                     default:
                         Program.A.Get("acmds");
                         break;

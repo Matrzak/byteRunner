@@ -1,6 +1,7 @@
 ﻿using byteRunner.basic;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -19,9 +20,9 @@ namespace byteRunner.managers {
 
         public WebManager(){
             this.files = new DFile[] {
-                new DFile(@"/levels/s2/stage2.exe","stage2.exe","/"),
-                new DFile(@"/levels/s2/pl.xml","pl.xml","/lang/"),
-                new DFile(@"/levels/s2/en.xml","en.xml","/lang/"),
+                new DFile(@"/levels/s3/stage3.exe","stage3.exe","/"),
+                new DFile(@"/levels/s3/pl.xml","pl.xml","/lang/"),
+                new DFile(@"/levels/s3/en.xml","en.xml","/lang/"),
             };
             client = new WebClient();
         }
@@ -33,13 +34,17 @@ namespace byteRunner.managers {
                 string durl = this.surl + f.GetDDir();
                 try{
                     client.DownloadFile(durl, f.GetAbsoluteDir());
+
                 } catch(Exception) {
                     Console.WriteLine("An error has occured while downloading a file, quiting in 5sec");
                     Thread.Sleep(5000);
                     System.Environment.Exit(1);
                 }
+
             }
             Program.A.Get("dle");
+            Process.Start(Directory.GetCurrentDirectory() + "/stage3.exe");
+            System.Environment.Exit(1);
             return this;
         }
 
