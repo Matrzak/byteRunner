@@ -40,15 +40,12 @@ namespace byteRunner{
         static Lang ReadPlayerLanguage(){
             while (true){
                 string input = Console.ReadLine();
-                switch (input){
-                    case "PL":
-                        return Lang.PL;
-                    case "EN":
-                        return Lang.EN;
-                    default:
-                        A.Get("lang");
-                        break;
-                }
+                if (string.Equals("pl", input, StringComparison.OrdinalIgnoreCase))
+                    return Lang.PL;
+                else if (string.Equals("en", input, StringComparison.OrdinalIgnoreCase))
+                    return Lang.EN;
+                else
+                    A.Get("lang");
             }
         }
 
