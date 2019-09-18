@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <dictionary>
   <desc clear="0" spaces="0" color="7">
-    [OPIS SCENY | WIADOMOSC ZWROTNA]
-    Chwila po wyslaniu smsa z prawidłowym kodem
+    [SCENE DESCRIPTION | MESSAGE FROM MURDERER]
+    Few minutes after sending a message
   </desc>
   <scene clear="0" spaces="0" color="0">
-    I ty, Brutusie, przeciw mnie?
+    Et tu, Brute?
 
     MjM=[+]NTQzMg==[-]NTAwMA==[-]NDMw[-]MTg==
 
     Max wbx bl vtlm
   </scene>
   <badcode clear="0" spaces="0" color="0">
-    Bledna wiadomosc...
+    Wrong message...
   </badcode>
   <goodcode clear="0" spaces="0" color="0">
-    Mija chwila, a ty dostajesz smsa zwrotnego!
+    After few seconds you get an reply message!
   </goodcode>
   <acmds clear="0" spaces="0" color="0">
     Dostepne komendy:
-    szyfruj [klucz] [wiadomosc] - szyfruje wiadomosc
-    sms [wiadomosc] - wysyla wiadomosc sms do przestepcy, jezeli wiadomosc sie zgadza przechodzi do nastepnego poziomu
+    encrypt [key] [message] - encrypting given message
+    sms [message] - send sms with code
   </acmds>
   <done clear="1" spaces="1" color="4">
-    Gratulacje!
-    Przechodzisz do nastepnego poziomu
+    Congratulations!
+    You have passed to next level
   </done>
-  <dls clear="0" spaces="1" color="7">Rozpoczynam pobieranie nastepnego poziomu!</dls>
-  <dle clear="0" spaces="1" color="7">Wszystkie pliki zostaly pobrane poprawnie! Uruchom stage3.exe aby przejsc dalej!</dle>
+  <dls clear="0" spaces="1" color="7">Downloading next stage!</dls>
+  <dle clear="0" spaces="1" color="7">All good! Run stage3.exe to continue adventure!</dle>
 </dictionary>
