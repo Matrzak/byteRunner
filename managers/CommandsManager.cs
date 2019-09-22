@@ -39,7 +39,7 @@ namespace byteRunner.managers {
             while (true){
                 string[] c = Console.ReadLine().Split(' ');
                 switch (c[0]){
-                    case "szyfruj":
+                    case "szyfruj": case "encrypt":
                         if(c.Length <= 2 || !IsNumeric(c[1])){
                             Program.A.Get("acmds");
                             break;
