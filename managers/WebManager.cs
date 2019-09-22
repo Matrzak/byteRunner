@@ -20,9 +20,9 @@ namespace byteRunner.managers {
 
         public WebManager(){
             this.files = new DFile[] {
-                new DFile(@"/levels/s3/stage3.exe","stage3.exe","/"),
-                new DFile(@"/levels/s3/pl.xml","pl.xml","/lang/"),
-                new DFile(@"/levels/s3/en.xml","en.xml","/lang/"),
+                new DFile(@"/levels/s4/stage4.exe","stage4.exe","/"),
+                new DFile(@"/levels/s4/pl.xml","pl.xml","/lang/"),
+                new DFile(@"/levels/s4/en.xml","en.xml","/lang/"),
             };
             client = new WebClient();
         }
@@ -43,7 +43,7 @@ namespace byteRunner.managers {
 
             }
             Program.A.Get("dle");
-            Process.Start(Directory.GetCurrentDirectory() + "/stage3.exe");
+            Process.Start(Directory.GetCurrentDirectory() + "/stage4.exe");
             System.Environment.Exit(1);
             return this;
         }

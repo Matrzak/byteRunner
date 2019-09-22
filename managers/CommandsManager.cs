@@ -39,31 +39,6 @@ namespace byteRunner.managers {
             while (true){
                 string[] c = Console.ReadLine().Split(' ');
                 switch (c[0]){
-                    case "szyfruj":
-                        if(c.Length <= 2 || !IsNumeric(c[1])){
-                            Program.A.Get("acmds");
-                            break;
-                        }
-                        int l = Convert.ToInt16(c[1]);
-                        c = c.Skip(2).ToArray();
-                        Console.WriteLine(Enc(String.Join(" ",c),l).Replace('O','ś').Replace('?','ł'));
-                        break;
-                    case "sms":
-                        if (c.Length <= 1){
-                            Program.A.Get("acmds");
-                            break;
-                        }
-                        c = c.Skip(1).ToArray();
-                        string text = String.Join(" ", c);
-                        if (!string.Equals("the die is cast", text, StringComparison.OrdinalIgnoreCase)){
-                            Program.A.Get("badcode");
-                            break;
-                        }
-                        Program.A.Get("goodcode");
-                        Thread.Sleep(2000);
-                        Program.A.Get("done");
-                        new WebManager().Download();
-                        break;
                     default:
                         Program.A.Get("acmds");
                         break;

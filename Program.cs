@@ -27,8 +27,8 @@ namespace byteRunner{
         }
 
         static void removeOldExe(){
-            if (File.Exists(dir + @"/stage1.exe")){
-                File.Delete(dir + @"/stage1.exe");
+            if (File.Exists(dir + @"/stage2.exe")){
+                File.Delete(dir + @"/stage2.exe");
             }
         }
 
