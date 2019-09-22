@@ -18,7 +18,7 @@
     After few seconds you get an reply message!
   </goodcode>
   <acmds clear="0" spaces="0" color="0">
-    Dostepne komendy:
+    Available commands:
     encrypt [key] [message] - encrypting given message
     sms [message] - send sms with code
   </acmds>
